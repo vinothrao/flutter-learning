@@ -7,8 +7,12 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("All questions are answered.Your total score is " +
-          totalScore.toString()),
+      child: Column(
+        children: <Widget>[
+          Text("All questions are answered.Your total score is " +
+              totalScore.toString()),
+        ],
+      ),
     );
   }
 }
